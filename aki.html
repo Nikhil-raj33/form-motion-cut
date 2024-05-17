@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <section class="transparent-box">
+        <h1>Registration Form</h1>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter user name" required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter user email address" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                </div>
+                <div class="input-box">
+                    <label for="birthdate">Birth Date</label>
+                    <input type="date" id="birthdate" name="birthdate" placeholder="Enter birth date" required>
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box address">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter address" required>
+                <div class="column">
+                    <div class="select-box">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="" hidden>Country</option>
+                            <option value="India">India</option>
+                            <option value="sri lanka">sri lanka</option>
+                            <option value="United Kingdoms">United Kingdoms</option>
+                            <option value="USA">USA</option>
+                            <option value="china">china</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="City" required>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="State" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="postal-code">Postal Code</label>
+                        <input type="number" id="postal-code" name="postal_code" placeholder="Postal Code" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
